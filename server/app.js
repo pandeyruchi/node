@@ -9,14 +9,14 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 var express = require('express');
 var mongoose = require('mongoose');
-var mysql = require('mySql');
+//var mysql = require('mySql');
 //var sequelize = require('sequelize');
-var connection = mysql.createConnection({
-    host     : 'localhost',
-    user     : 'ruchi',
-    password : '1234',
-    database : 'test'
-});
+//var connection = mysql.createConnection({
+//    host     : 'localhost',
+//    user     : 'ruchi',
+//    password : '1234',
+//    database : 'test'
+//});
 
 //var sequelize = new sequelize('test', 'ruchi', '1234', {
 //    host: 'localhost',
