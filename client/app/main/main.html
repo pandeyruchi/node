@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+
+        </div>
+        <div class="col-md-6">
+            <form class="thing-form">
+                <p class="input-group">
+                    <input type="text" class="form-control" placeholder="Paste Url here..." ng-model="url">
+      <span class="input-group-btn">
+        <button type="submit" class="btn btn-primary" ng-click="addThing()">Add New</button>
+      </span>
+                </p>
+            </form>
+        </div>
+        <div class="col-md-3">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+
+        </div>
+        <div class="col-md-6">
+            <table class="table table-striped">
+                <tr>
+                    <td>Image</td>
+                    <td>UserName</td>
+                </tr>
+                <tr ng-repeat="user in users">
+                    <td><img src="{{user.avatar_image.url}}" width="50" height="50"></td>
+                    <td>{{user.username}}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-md-3">
+
+        </div>
+    </div>
+</div>
+
+
